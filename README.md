@@ -9,7 +9,7 @@ Store User Login is a demo program to show how you can store some information wh
 
 ![](https://img.shields.io/badge/dependencies-Entity_Framework-red)
 
-![](https://img.shields.io/badge/dependencies-Entity_Framework Tools-red)
+![](https://img.shields.io/badge/dependencies-Entity_Framework_Tools-red)
 
 
 
