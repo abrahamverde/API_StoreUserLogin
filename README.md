@@ -11,6 +11,8 @@ Store User Login is a demo program to show how you can store some information wh
 
 ![](https://img.shields.io/badge/dependencies-Entity_Framework_Tools-red)
 
+![](https://img.shields.io/badge/dependencies-newtonsoft-red)
+
 
 
 # Usage
@@ -31,9 +33,9 @@ You must setup Database String Connection in **SGAContext.cs** file. This String
 #### Config File Option
 ```C#
 String configString = System.IO.File.ReadAllText("appsettings.json");
- dynamic configObject = JsonConvert.DeserializeObject<dynamic>(configString);
+dynamic configObject = JsonConvert.DeserializeObject<dynamic>(configString);
 
- optionsBuilder.UseSqlServer(configObject.DBStringConnection);
+optionsBuilder.UseSqlServer(configObject.DBStringConnection);
  
 			
 ```
