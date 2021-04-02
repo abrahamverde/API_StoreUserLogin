@@ -13,22 +13,22 @@ Store User Login is a demo program to show how you can store some information wh
 
 
 
-## Usage
-###User Login Table
+# Usage
+### User Login Table
 In this repository there is a file UserLoginTable.sql, this file create for you the userLoginTable in the Database.
 
 **Note**: The UserLoginTable.sql expects SGA as database name. If your database has different name, you should change it in the first line of this file.
 
-###Setup Database String Connection
+### Setup Database String Connection
 You must setup Database String Connection in **SGAContext.cs** file. This String Connection could be hardcoded (not recommended) or getting from a config file. Other option is getting the String Connection from a webservice.
 
-####Hardcode Option
+#### Hardcode Option
 
 ```C#
  optionsBuilder.UseSqlServer("Server=192.168.56.101; Database=SGA; Trusted_Connection=false; User=sa; Password = 123456");
 ```
 
-####appsetting.json Option
+#### Config File Option
 ```C#
 String configString = System.IO.File.ReadAllText("appsettings.json");
  dynamic configObject = JsonConvert.DeserializeObject<dynamic>(configString);
@@ -37,7 +37,7 @@ String configString = System.IO.File.ReadAllText("appsettings.json");
  
 			
 ```
-AppSetting.json
+#### AppSetting.json
 ```json
 {
   "Logging": {
